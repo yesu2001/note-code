@@ -2,10 +2,7 @@
 
 import React, { useCallback, useState } from "react";
 import Image from "next/image";
-import { EditorView, basicSetup } from "codemirror";
 import CodeMirror from "@uiw/react-codemirror";
-// import { javascript } from "@codemirror/lang-javascript";
-import { dracula } from "@uiw/codemirror-theme-dracula";
 import { basicLight, basicDark } from "@uiw/codemirror-theme-basic";
 import { loadLanguage, langs } from "@uiw/codemirror-extensions-langs";
 import dropIcon from "../assets/down arrow.svg";
