@@ -1,9 +1,10 @@
 import React from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { basicLight, basicDark } from "@uiw/codemirror-theme-basic";
-import { loadLanguage, langs } from "@uiw/codemirror-extensions-langs";
+import { loadLanguage } from "@uiw/codemirror-extensions-langs";
 
 export default function CodeEditor({ theme, lang, value, onChange }) {
+  console.log(lang.value);
   return (
     <div className="flex-[1] my-4">
       <CodeMirror

@@ -3,8 +3,7 @@ import bgImage from "../../assets/Hero-Background-notecode.svg";
 import Header from "@/components/Header";
 import ShareEditor from "@/components/ShareEditor";
 
-export default function page() {
-  // write a function to fetch from database when loaded
+export default function page({ params }) {
   return (
     <main className="w-full flex h-full flex-col items-center justify-between">
       <Image
@@ -16,7 +15,7 @@ export default function page() {
       />
       <div className="z-50 my-8">
         <Header />
-        <ShareEditor />
+        <ShareEditor codeId={params.id} />
       </div>
     </main>
   );
